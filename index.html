@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="shortcut icon" href="images/faviconGame.png" type="image/x-icon">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+<div class="card container">
+    <div class="info">
+        <div class="title">
+            <span>Rock</span>
+            <span>Paper</span>
+            <span>Scissor</span>
+            <span>Lizard</span>
+            <span>Spock</span>
+        </div>
+        <div class="score">
+            <p>User Score: <span class="user-score">0</span></p>
+            <p>Computer Score: <span class="comp-score">0</span></p>
+        </div>
+    </div>
+    <div class="weapons">
+        <button class="btn btn-weapon" onclick="playGame('rock')"><i class="fa-solid fa-hand-back-fist"></i></button>
+        <button class="btn btn-weapon" onclick="playGame('paper')"><i class="fa-solid fa-hand"></i></button>
+        <button class="btn btn-weapon" onclick="playGame('scissor')"><i class="fa-solid fa-hand-scissors"></i></button>
+        <button class="btn btn-weapon" onclick="playGame('lizard')"><i class="fa-solid fa-hand-lizard"></i></button>
+        <button class="btn btn-weapon" onclick="playGame('spock')"><i class="fa-solid fa-hand-spock"></i></button>
+    </div>
+    <div class="result-container">
+        <p class="user-choice"></p>
+        <p class="comp-choice"></p>
+        <p class="result"></p>
+    </div>
+</div>
+
+
+    <script src="./scripts/script.js">
+    </script>
+</body>
+</html>
